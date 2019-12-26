@@ -1,4 +1,4 @@
-import { NumbersCollection } from "./NumbersCollection";
+import { NumbersCollection } from './NumbersCollection';
 
 export class Sorter {
   constructor(public collection: NumbersCollection) {} // same as above
