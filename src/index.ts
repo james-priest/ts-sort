@@ -1,12 +1,15 @@
 import { Sorter } from './Sorter';
 import { NumbersCollection } from './NumbersCollection';
+import { CharactersCollection } from './CharactersCollection';
 
 const numbersCollection = new NumbersCollection([12, 3, -5, 0, -10, 2]);
-const sorter = new Sorter(numbersCollection);
+const numSorter = new Sorter(numbersCollection);
 console.log('pre sort:', numbersCollection.data);
-sorter.sort();
+numSorter.sort();
 console.log('post sort:', numbersCollection.data);
 
-// const sorter2 = new Sorter("James");
-// sorter2.sort();
-// console.log(sorter2.collection);
+const charactersCollection = new CharactersCollection('James');
+const strSorter = new Sorter(charactersCollection);
+console.log('pre sort:', charactersCollection.data);
+strSorter.sort();
+console.log('post sort:', charactersCollection.data);
