@@ -16,4 +16,6 @@ npm install
 
 Run the project on command line with
 
-- `npm start`
+```bash
+npm start
+```
